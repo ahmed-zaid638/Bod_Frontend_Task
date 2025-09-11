@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { StatsCard } from "@/components/ui/stats-card";
 import { Activity, Database, UserPlus, Users } from "lucide-react";
+import { href, Link } from "react-router-dom";
 
 export default function Dashboard() {
   const stats = [
@@ -44,16 +45,19 @@ export default function Dashboard() {
       title: "Manage Users",
       description: "View, edit, and manage user accounts",
       icon: <Users className="h-8 w-8 text-primary" />,
+      href: "/users",
     },
     {
       title: "Add New User",
       description: "Create a new user account",
       icon: <UserPlus className="h-8 w-8 text-primary" />,
+      href: "/users/new",
     },
     {
       title: "View Data",
       description: "Browse and search all data entries",
       icon: <Database className="h-8 w-8 text-primary" />,
+      href: "/data",
     },
   ];
 
@@ -76,18 +80,19 @@ export default function Dashboard() {
 
         <CardContent className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {quickActions.map((action) => (
-            <div
+            <Link
+              to={action.href}
               key={action.title}
               className="flex items-center space-x-4 rounded-lg border p-4 hover:bg-muted transition"
             >
               {action.icon}
               <div>
-                <h3 className="font-medium">{action.title}</h3>
+                <h3 className="font-medium text-black">{action.title}</h3>
                 <p className="text-sm text-muted-foreground">
                   {action.description}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </CardContent>
       </Card>

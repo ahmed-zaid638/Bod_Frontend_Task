@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Home, Users, UserPlus, Database, Settings } from "lucide-react";
+import { Home, Users, UserPlus, Database } from "lucide-react";
 import { cn } from "@/libs/utils";
 
 export default function Sidebar({ className = "" }: { className?: string }) {
@@ -9,7 +9,6 @@ export default function Sidebar({ className = "" }: { className?: string }) {
     { name: "Users", href: "/users", icon: Users },
     { name: "Add User", href: "/users/new", icon: UserPlus },
     { name: "Data", href: "/data", icon: Database },
-    { name: "Settings", href: "/settings", icon: Settings },
   ];
 
   return (

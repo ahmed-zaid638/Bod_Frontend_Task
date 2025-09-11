@@ -101,7 +101,7 @@ export default function UsersPage() {
         onEdit={handleEdit}
         onDelete={handleDelete}
         onRowClick={handleRowClick}
-        itemsPerPage={15}
+        itemsPerPage={7}
       />
 
       <ConfirmationModal
