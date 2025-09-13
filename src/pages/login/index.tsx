@@ -67,7 +67,7 @@ export default function LoginPage() {
           disabled={loading}
           variant="outline"
           size="sm"
-          className="text-black cursor-pointer w-full"
+          className="text-white cursor-pointer w-full bg-black "
         >
           {loading ? "Logging in..." : "Login"}
         </Button>
