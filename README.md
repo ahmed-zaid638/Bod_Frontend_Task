@@ -1,7 +1,7 @@
 # BOD Dashboard Task
 
 ## Credentials
-- **Email** : ahmedzaida464@gmmail.com
+- **Email** : ahmedzaida464@gmail.com
 - **Password**: ahmedzaid123
 
 ---
