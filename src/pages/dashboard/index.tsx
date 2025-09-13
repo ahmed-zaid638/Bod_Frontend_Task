@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/card";
 import { StatsCard } from "@/components/ui/stats-card";
 import { Activity, Database, UserPlus, Users } from "lucide-react";
-import { href, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
   const stats = [
