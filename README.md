@@ -1,8 +1,8 @@
-# BOD Dashboard Task
+# Code Quests Dashboard Task
 
 ## Credentials
-- **Email** : ahmedzaida464@gmail.com
-- **Password**: ahmedzaid123
+- **Email** : admin@code-quests.com
+- **Password**: codequests
 
 ---
 
