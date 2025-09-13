@@ -75,18 +75,18 @@ export default function UsersPage() {
 
   return (
     <div className="space-y-6">
-      <div className="flex justify-between items-start">
+      <div className="flex-col  sm:flex sm:flex-row justify-between items-start">
         <div>
-          <h2 className="text-3xl font-bold text-foreground">
+          <h2 className="text-xl md:text-3xl font-bold text-foreground">
             User Management
           </h2>
-          <p className="mt-2 text-muted-foreground">
+          <p className="mt-2 text-muted-foreground ">
             Manage user accounts and their information.
           </p>
         </div>
-        <Link to="/users/new">
-          <Button>
-            <UserPlus className="h-4 w-4 mr-2" />
+        <Link to="/users/new" className="block w-full sm:w-auto mt-3 sm:mt-0">
+          <Button className="cursor-pointer w-full " >
+            <UserPlus className=" w-4 mr-2" />
             Add User
           </Button>
         </Link>

@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Home, Users, UserPlus, Database } from "lucide-react";
-import { cn } from "@/libs/utils";
+import { cn } from "@/lib/utils";
 
 export default function Sidebar({ className = "" }: { className?: string }) {
   const { pathname } = useLocation();
@@ -14,7 +14,7 @@ export default function Sidebar({ className = "" }: { className?: string }) {
   return (
     <aside
       className={cn(
-        " w-64 min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white shadow-lg",
+        " w-64 min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white shadow-lg fixed ",
         className
       )}
     >

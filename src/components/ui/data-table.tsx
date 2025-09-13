@@ -127,7 +127,7 @@ export function DataTable<T extends Record<string, any>>({
                   <TableRow
                     key={index}
                     className={
-                      onRowClick ? "cursor-pointer hover:bg-gray-50" : ""
+                      onRowClick ? "cursor-pointer hover:bg-gray-50 " : ""
                     }
                     onClick={() => onRowClick?.(item)}
                   >
@@ -144,6 +144,7 @@ export function DataTable<T extends Record<string, any>>({
                           {onEdit && (
                             <Button
                               variant="ghost"
+                              className="cursor-pointer"
                               size="sm"
                               onClick={(e) => {
                                 e.stopPropagation();
@@ -156,6 +157,7 @@ export function DataTable<T extends Record<string, any>>({
                           {onDelete && (
                             <Button
                               variant="ghost"
+                              className="cursor-pointer"
                               size="sm"
                               onClick={(e) => {
                                 e.stopPropagation();

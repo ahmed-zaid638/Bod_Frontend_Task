@@ -1,6 +1,6 @@
 "use client";
 
-import { useNotifications } from "@/context/notification-context";
+import { useNotifications } from "@/context/NotificationContext";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { UserForm } from "../ui/user-form";

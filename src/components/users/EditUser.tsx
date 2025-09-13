@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { useNotifications } from "@/context/notification-context";
+import { useNotifications } from "@/context/NotificationContext";
 import { UserForm } from "@/components/ui/user-form";
 import type { User } from "@/types/User";
 import { getUser } from "@/services/user/getUser";
